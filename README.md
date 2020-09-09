@@ -1,7 +1,9 @@
 # Adding-Ruby-Furigana-To-Japanese-Lyrics-In-MediaWiki
-This is a script for creating Japanese lyric furigana in MoegirlPedia or any Mediawiki site you want. 
+This is a Python3 script for creating Japanese lyric furigana in MoegirlPedia or any Mediawiki site you want. 
 
 It requires Mecab (http://taku910.github.io/mecab/) to work.
+
+You need to create a text file named "test.txt" in UTF-8 coding and copy the original lyrics there.
 
 You have to modify the prefix and suffix to suit your own need.
 

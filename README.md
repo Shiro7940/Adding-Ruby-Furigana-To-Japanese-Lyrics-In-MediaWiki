@@ -41,7 +41,7 @@ You can copy the generated lyrics from the console.
 ずっと
 ```
 ## The output in console
-* If you familiar with Japanese, you will notice there are a lot errors. So that is why you need to manually correct them.
+* If you familiar with Japanese, you will notice there are a lot of errors. So that is why you need to manually correct them.
 * For ondoku words it handles well, but kundoku words are not so good (since the context determines their pronunciation).
 * And there are unprocessed kanjis, I don't know what is going on there so just correct them manually.
 ```

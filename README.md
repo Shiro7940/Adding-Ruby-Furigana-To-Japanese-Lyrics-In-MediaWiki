@@ -14,7 +14,7 @@ IMPORTANT NOTICE:
 
 Since the context info was lost because of the program design, MeCab sometimes cannot generate appropriate furigana.
 
-But it is quite a relief compared to manually adding furigana.
+But it is quite a relief compared to manually adding furigana and MediaWiki templates to the lyric.
 
 You can copy the generated lyrics from the console.
 

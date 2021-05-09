@@ -24,11 +24,11 @@ def cjk_substrings(string):
 
 def linenum(filename):
     try:
-        text = open(filename,"rb") #filename
+        txt = open(filename,"rb") #filename
         num = 0
         total = 0
         emptylst = []
-        for line in text :
+        for line in txt :
             line = line.decode("utf-8")
             total += 1
             if len(line) >= 3:
@@ -55,11 +55,15 @@ def colors(txt:str,colors:list):
     i=0
     all_lines = ""
     for line in txt : 
-        line = "{{color|"+str(colors[i])+"|"+line[:-1]+"}}\n"
-        i += 1
+        last_chr = line[-1:]
+        if len(line)>1:
+            line = "{{color|"+str(colors[i])+"|"+line[:-1]+"}}\n"
+            i += 1
         if i == len(colors):
             i = 0
         all_lines += line
+        print(last_chr)
+    all_lines = all_lines[:-3]+last_chr+"}}"
     print(all_lines)
     pyperclip.copy(all_lines)
     txt.close()
@@ -196,7 +200,8 @@ def getu(url:str,mode=None):
     print(all_str,end="")  
     pyperclip.copy(all_str)
     txt.close()    
-
+    
+rainbow=["#bf3553","#f33b1f","#fb8b05","#229453","#648e93","#11659a","#681752"]
 
 CHARA = "^"
 EXEMPT = "交叉颜色"
